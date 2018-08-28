@@ -15,7 +15,7 @@ header {
 }
 
 input[type=button] {
-  width: 10vw;
+  width: auto;
   font-size: 30px;
   border-radius: 0;
 }
