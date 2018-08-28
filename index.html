@@ -44,6 +44,10 @@
       <li>List Items</li>
       <li>List Items</li>
     </ul>
+    <input type='button' id='btn1' value='Get Alert'>
+    <input type='button' id='btn2' value='Hide List'/>
+    <input type='button' id='btn3' value='Submit'/>
+    <input type='text'/>
   </div>
   <script>
     $('h1.heading1').css('color', 'blue')
@@ -51,6 +55,18 @@
     $('ul#list li:even').css('color', 'green')
     $('ul#list li:even').css('font-weight', 'bold')
     $('ul#list li:first').css('text-decoration', 'underline')
+    $(':text').hide()
+
+    $('#btn1').click(() => {
+      alert('Button Clicked!')
+    })
+    $('#btn2').click(() => {
+      if ($('#list').css('display') === 'none') {
+        $('#list').show()
+      } else {
+        $('#list').hide()
+      }
+    })
   </script>
 </body>
 </html>
